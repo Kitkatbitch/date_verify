@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+# shabang for python3: is #!/usr/bin/python3
+# to run this script in current env use format from line 1;
+# env must be activated
+
+# ########################################################################
+# Program name: date_verify                                              #
+#
+# Author: redsauce                                                       #
+#
+# Date created: 07/29/2020                                               #  
+#
+# Purpose: Verify if a date is valid or not                              #
+#
+# Licence: GPLv2                                                         #
+# https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#                                                                        #
+##########################################################################
+
+# You will need to install 'python-dateutil' if you don't have it
+# run: pip install python-dateutil
+# I suggest you run the above command in a venv virtual environment
+from dateutil.parser import parse
+
+print("""====================================================
+'date_verify' version 1, Copyright (C) 2020 redsauce
+date_verify comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome
+to redistribute it under certain conditions.
+====================================================""")
+
+# input prints message and as`signs input to variable
+test_date = input("Enter date: ")
+
+# Try block is a method of exception handeling (a way of seeing if
+# code raises an exception (error) and executing certain code if
+# it does)
+# it "tries" the code under the try clause and then executes the
+# appropriate clause, i.e. except clause, or the else clause
+try:
+    parse(test_date)
+# An except clause can handle all vs specified exceptions
+# except: (handles all exceptions)  Vs. except SpecifiedError:
+# (handles only SpecifiedError excepttions)
+except:
+    print(" Not a valid Date!")
+else:
+    print("Date is valid.")
+
+
+# Copyright (C) 2020  redsauce
+
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# # GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+# Boston, MA  02110-1301, USA.
