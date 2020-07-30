@@ -6,7 +6,7 @@
 # ########################################################################
 # Program name: date_verify                                              #
 #
-# Author: redsauce                                                       #
+# Author: kitkatbitch                                                    #
 #
 # Date created: 07/29/2020                                               #  
 #
@@ -23,7 +23,7 @@
 from dateutil.parser import parse
 
 print("""====================================================
-'date_verify' version 1, Copyright (C) 2020 redsauce
+'date_verify' version 1, Copyright (C) 2020 kitkatbitch
 date_verify comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome
 to redistribute it under certain conditions.
@@ -48,7 +48,7 @@ else:
     print("Date is valid.")
 
 
-# Copyright (C) 2020  redsauce
+# Copyright (C) 2020  kitkatbitch
 
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
